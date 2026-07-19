@@ -1,5 +1,5 @@
 # LEBMOK25571_PTO2508_B_LEBOGANG_MOKOENA_DJSPP
-# 🎧 Podcast App — DJSPP Portfolio Piece
+# 🎧 Podcast App - DJSPP Portfolio Piece
 
 A podcast discovery and listening app built in React. It extends the
 searchable/sortable/filterable browser from DJS05 with a persistent global
@@ -66,7 +66,7 @@ npm run build     # production build to /dist
 npm run preview   # preview the production build locally
 ```
 
-No `.env` file or API key needed — the app calls the public Podcast API
+No `.env` file or API key needed , the app calls the public Podcast API
 directly.
 
 **Troubleshooting:** `vite: not found` means `npm install` didn't run in the
@@ -93,7 +93,7 @@ project root. `/show/1` 404ing in production but not in dev means
 ## Deployment
 
 1. Push to GitHub.
-2. Import into Vercel — default Vite settings work (`npm run build`,
+2. Import into Vercel , default Vite settings work (`npm run build`,
    output `dist`).
 3. `vercel.json` is already committed with the rewrite rule so deep links
    like `/show/1` don't 404 on refresh.
