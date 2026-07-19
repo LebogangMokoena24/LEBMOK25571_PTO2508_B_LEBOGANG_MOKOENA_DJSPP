@@ -1,1 +1,32 @@
+:root {
+  --grey-text: #555;
+  --bg: #f9f9f9;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #555555;
+  --border-color: #e5e7eb;
+  --accent: #0070f3;
+}
 
+[data-theme="dark"] {
+  --grey-text: #b3b3b3;
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --text: #f1f1f1;
+  --text-muted: #b3b3b3;
+  --border-color: #333333;
+  --accent: #4da3ff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  padding-bottom: 90px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: inherit;
+}
