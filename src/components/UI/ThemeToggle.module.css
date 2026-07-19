@@ -1,1 +1,18 @@
+.toggle {
+  border: 1px solid var(--border-color, #ddd);
+  background: var(--surface, #fff);
+  color: var(--text, #222);
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
 
+.toggle:hover {
+  transform: scale(1.08);
+}
