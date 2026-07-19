@@ -1,1 +1,14 @@
+.button {
+  border: none;
+  background: none;
+  color: #e11d48;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.4rem;
+  transition: transform 0.15s ease;
+}
 
+.button:hover {
+  transform: scale(1.15);
+}
