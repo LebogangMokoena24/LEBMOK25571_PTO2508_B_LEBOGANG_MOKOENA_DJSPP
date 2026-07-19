@@ -11,7 +11,7 @@ The app is organised around **one focused React Context per concern**
 app-state object. Each context owns its own slice of state, persists itself
 to `localStorage` independently, and exposes a small API (`toggleFavorite`,
 `playEpisode`, `toggleMute`, etc.). They're composed in `App.jsx` in an
-order that reflects real dependencies — `AudioPlayerProvider` reads from
+order that reflects real dependencies , `AudioPlayerProvider` reads from
 `ListeningProgressContext` to resume playback, so the progress provider
 sits above it in the tree.
 
@@ -24,13 +24,13 @@ Deployment below)*
 
 - **React 19** (function components + hooks) for the UI.
 - **react-router-dom v7** for client-side routing between `/`, `/show/:id`,
-  and `/favourites` — no full page reloads, which is what lets audio keep
+  and `/favourites` , no full page reloads, which is what lets audio keep
   playing across navigation.
 - **Vite** for the dev server and production build.
 - **CSS Modules** for component-scoped styling, plus **CSS custom
   properties** in `src/index.css` to drive the light/dark theme from one
   `data-theme` attribute.
-- **`localStorage`** to persist favourites, theme, and listening progress —
+- **`localStorage`** to persist favourites, theme, and listening progress ,
   no backend needed.
 - A single native **`<audio>` element** (via `useRef`), controlled directly
   in `AudioPlayerContext`, instead of an audio library.
@@ -71,7 +71,7 @@ directly.
 
 **Troubleshooting:** `vite: not found` means `npm install` didn't run in the
 project root. `/show/1` 404ing in production but not in dev means
-`vercel.json` wasn't deployed — it holds the SPA rewrite rule.
+`vercel.json` wasn't deployed , it holds the SPA rewrite rule.
 
 ## Usage
 
@@ -104,7 +104,7 @@ project root. `/show/1` 404ing in production but not in dev means
 
 - The Podcast API doesn't serve real per-episode audio, so every episode
   plays a placeholder track (`PLACEHOLDER_AUDIO_URL` in `src/utils/
-  episode.js`) — swap it for a real source if one becomes available.
+  episode.js`).
 - The recommended carousel samples shows randomly rather than
   personalising, since the API doesn't expose listening history to base
   recommendations on.
