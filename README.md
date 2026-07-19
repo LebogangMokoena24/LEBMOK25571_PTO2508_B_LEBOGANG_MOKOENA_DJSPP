@@ -15,10 +15,9 @@ order that reflects real dependencies , `AudioPlayerProvider` reads from
 `ListeningProgressContext` to resume playback, so the progress provider
 sits above it in the tree.
 
-## Live Demo
+## Vercel link
 
-`https://your-deployment-url.vercel.app` *(replace after deploying — see
-Deployment below)*
+`https://lebmok-25571-pto-2508-b-lebogang-mokoena-djspp-lat53d9xj.vercel.app
 
 ## Technologies Used
 
