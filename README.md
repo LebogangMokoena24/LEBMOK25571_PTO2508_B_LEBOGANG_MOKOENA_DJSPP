@@ -41,10 +41,14 @@ Deployment below)*
 ## Project Structure
 
 src/
+
 ├── api/            fetchPata.js — podcast API calls
+
 ├── utils/          formatDate.js, episode.js (ID helper + placeholder audio)
+
 ├── context/         PodcastContext, ThemeContext, FavoritesContext,
 │                     ListeningProgressContext, AudioPlayerContext
+
 ├── components/
 │   ├── UI/          Header, ThemeToggle, Loading, Error, Pagination, GenreTags
 │   ├── Filters/      SearchBar, SortSelect, GenreFilter
